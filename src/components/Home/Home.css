@@ -4,6 +4,8 @@
   align-items: center;
   gap: 1%;
   justify-content: center;
+  background-color: #216d73;
+  border: #216d73;
 }
 
 .currencyCont {
@@ -12,6 +14,8 @@
   width: 22%;
   align-self: center;
   justify-content: center;
+  align-items: center;
+  padding-top: 2%;
 }
 
 .imgCurrency {

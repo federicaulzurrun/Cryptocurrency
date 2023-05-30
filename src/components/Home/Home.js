@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getCurrencies } from '../../redux/currency/currencySlice';
-import './Currency.css';
+import './Home.css';
 
 const CurrencyList = () => {
   const dispatch = useDispatch();
