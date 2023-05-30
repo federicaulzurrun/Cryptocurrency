@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
 }
 
@@ -7,7 +7,7 @@
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
-  background-color:  #1f424d;
+  background-color: #1f424d;
 }
 
 .imgCont {
@@ -28,13 +28,12 @@
   width: 25%;
   display: flex;
   align-items: center;
-
 }
 
 .icon {
   width: 2rem;
   height: 2rem;
-  color:  #fff;
+  color: #fff;
 }
 
 .arrow {
