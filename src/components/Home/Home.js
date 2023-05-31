@@ -45,9 +45,9 @@ const CurrencyList = () => {
 
   return (
     <>
-      <div className="">
-        <input type="text" placeholder="Search.." />
-        <button type="submit">
+      <div className="searchCont">
+        <input type="text" placeholder="Search your crypto..." className="search" />
+        <button className="btn" type="submit">
           <FaSearch />
         </button>
       </div>
@@ -81,7 +81,7 @@ const CurrencyList = () => {
             >
               <h3>{currencyItem.symbol}</h3>
               <img className="imgCurrency" src={currencyItem.icon_url} alt="" />
-              <h2>{currencyItem.name}</h2>
+              <h2 className="cryptoName">{currencyItem.name}</h2>
             </div>
 
           );

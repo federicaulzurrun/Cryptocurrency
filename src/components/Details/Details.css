@@ -1,0 +1,19 @@
+.details-main {
+  background: #f6699a;
+  padding-top: 10%;
+  align-self: center;
+}
+
+.detailsInfo {
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom right, #f6699a, #cb4277);
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 2%;
+  width: 90%;
+  margin: 5% auto;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 33%;
+}
