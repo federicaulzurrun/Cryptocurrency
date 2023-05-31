@@ -12,6 +12,22 @@ const Details = () => {
     <div className="details-main">
       <h3>{selectedCrypto.cryptoName}</h3>
       <img src={selectedCrypto.cryptoImg} alt={selectedCrypto.cryptoName} />
+
+      <h4>
+        Currency Code:
+        {' '}
+        {selectedCrypto.currency_code}
+      </h4>
+      <h4>
+        Symbol:
+        {' '}
+        {selectedCrypto.symbol}
+      </h4>
+      <h4>
+        Max Supply:
+        {' '}
+        {selectedCrypto.max_supply}
+      </h4>
     </div>
   );
 };

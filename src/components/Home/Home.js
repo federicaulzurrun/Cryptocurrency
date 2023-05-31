@@ -32,8 +32,14 @@ const CurrencyList = () => {
     );
   }
 
-  const clickHandler = (cryptoName, cryptoImg) => {
-    dispatch(crypto({ cryptoName, cryptoImg }));
+  const clickHandler = (cryptoName, cryptoImg, maxSupply, cryptoCode) => {
+    const payload = {
+      cryptoName,
+      cryptoImg,
+      maxSupply,
+      cryptoCode,
+    };
+    dispatch(crypto(payload));
     navigate('/details');
   };
 
@@ -56,10 +62,20 @@ const CurrencyList = () => {
               key={currencyId}
               role="button"
               tabIndex={0}
-              onClick={() => clickHandler(currencyItem.name, currencyItem.icon_url)}
+              onClick={() => clickHandler(
+                currencyItem.name,
+                currencyItem.icon_url,
+                currencyItem.code,
+                currencyItem.max_supply,
+              )}
               onKeyDown={(event) => {
                 if (event.key === 'Enter' || event.key === ' ') {
-                  clickHandler(currencyItem.name, currencyItem.icon_url);
+                  clickHandler(
+                    currencyItem.name,
+                    currencyItem.icon_url,
+                    currencyItem.code,
+                    currencyItem.max_supply,
+                  );
                 }
               }}
             >
@@ -67,6 +83,7 @@ const CurrencyList = () => {
               <img className="imgCurrency" src={currencyItem.icon_url} alt="" />
               <h2>{currencyItem.name}</h2>
             </div>
+
           );
         })}
       </div>

@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  data: null, // Updated initial state to null instead of an empty array
+  data: null,
 };
 
 const detailsSlice = createSlice({
