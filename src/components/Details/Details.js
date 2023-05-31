@@ -12,23 +12,15 @@ const Details = () => {
   return (
     <div className="details-main">
       <div className="detailsInfo">
-        <h3>{selectedCrypto.cryptoName}</h3>
+        <h4 className="code">{selectedCrypto.cryptoName}</h4>
         <img src={selectedCrypto.cryptoImg} alt={selectedCrypto.cryptoName} />
-
-        <h4>
-          Currency Code:
-          {' '}
-          {selectedCrypto.currency_code}
-        </h4>
-        <h4>
-          Symbol:
-          {' '}
-          {selectedCrypto.symbol}
-        </h4>
-        <h4>
+        <h3 className="completeName">
+          {selectedCrypto.completeName}
+        </h3>
+        <h4 className="supply">
           Max Supply:
           {' '}
-          {selectedCrypto.max_supply}
+          {selectedCrypto.maxSupply}
         </h4>
       </div>
     </div>

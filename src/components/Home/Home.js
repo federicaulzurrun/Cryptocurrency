@@ -32,12 +32,12 @@ const CurrencyList = () => {
     );
   }
 
-  const clickHandler = (cryptoName, cryptoImg, maxSupply, cryptoCode) => {
+  const clickHandler = (cryptoName, cryptoImg, completeName, maxSupply) => {
     const payload = {
       cryptoName,
       cryptoImg,
+      completeName,
       maxSupply,
-      cryptoCode,
     };
     dispatch(crypto(payload));
     navigate('/details');
@@ -63,17 +63,17 @@ const CurrencyList = () => {
               role="button"
               tabIndex={0}
               onClick={() => clickHandler(
-                currencyItem.name,
+                currencyItem.symbol,
                 currencyItem.icon_url,
-                currencyItem.code,
+                currencyItem.name,
                 currencyItem.max_supply,
               )}
               onKeyDown={(event) => {
                 if (event.key === 'Enter' || event.key === ' ') {
                   clickHandler(
-                    currencyItem.name,
+                    currencyItem.symbol,
                     currencyItem.icon_url,
-                    currencyItem.code,
+                    currencyItem.name,
                     currencyItem.max_supply,
                   );
                 }
