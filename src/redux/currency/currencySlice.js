@@ -1,7 +1,5 @@
-// currencySlice.js
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
-// const url = 'https://api.currencybeacon.com/v1/currencies?api_key=c168da22f9fdad061182224c36d95ffb';
 const url = 'http://api.coinlayer.com/list?access_key=37934908e28fb487b137f25b6a90dfcc';
 
 export const getCurrencies = createAsyncThunk('currency/getData', async () => {
@@ -15,11 +13,6 @@ export const getCurrencies = createAsyncThunk('currency/getData', async () => {
 });
 
 const initialState = {
-  // currency: {
-  //   response: {
-  //     fiats: {},
-  //   },
-  // },
   currency: {
     crypto: {},
   },
