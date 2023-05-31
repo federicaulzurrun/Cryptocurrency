@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { FaSearch } from 'react-icons/fa';
@@ -8,6 +8,7 @@ import { getCurrencies } from '../../redux/currency/currencySlice';
 import './Home.css';
 
 const CurrencyList = () => {
+  const [search, setSearch] = useState('');
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const currency = useSelector((state) => state.currency.currency.crypto);
@@ -32,6 +33,10 @@ const CurrencyList = () => {
     );
   }
 
+  const handleSearchChange = (event) => {
+    setSearch(event.target.value);
+  };
+
   const clickHandler = (cryptoName, cryptoImg, completeName, maxSupply) => {
     const payload = {
       cryptoName,
@@ -43,17 +48,26 @@ const CurrencyList = () => {
     navigate('/details');
   };
 
+  const filteredCurrency = Object.values(currency).filter(
+    (currencyItem) => currencyItem.name.toLowerCase().includes(search.toLowerCase()),
+  );
+
   return (
     <>
       <div className="searchCont">
-        <input type="text" placeholder="Search your crypto..." className="search" />
+        <input
+          type="text"
+          placeholder="Search your crypto..."
+          className="search"
+          value={search}
+          onChange={handleSearchChange}
+        />
         <button className="btn" type="submit">
           <FaSearch />
         </button>
       </div>
       <div className="currenciesCont">
-        {Object.keys(currency).map((currencyCode) => {
-          const currencyItem = currency[currencyCode];
+        {filteredCurrency.map((currencyItem) => {
           const currencyId = uuid();
 
           return (
@@ -83,7 +97,6 @@ const CurrencyList = () => {
               <img className="imgCurrency" src={currencyItem.icon_url} alt="" />
               <h2 className="cryptoName">{currencyItem.name}</h2>
             </div>
-
           );
         })}
       </div>
