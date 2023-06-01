@@ -6,6 +6,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -24,7 +25,7 @@
 
 # 🎬 NebulaCoinnect <a name="about-project"></a>
 
-This project is a web application built using React and Redux, comussiong the SpaceX data API. This page allows the user to see the available rockects and missions. Also the user can join one or of all them. In My Profile section the user can see the reservatios they have done.
+Our project is a sophisticated web application built with React and Redux, integrating seamlessly with the Coinlayer API. It offers users a user-friendly interface to explore a comprehensive range of cryptocurrencies. The application features a search bar for quick access to desired cryptocurrencies and provides detailed information including market value, price trends, trading volume, and market capitalization. Users can also access immersive views with concise overviews, technology details, and interactive charts for historical price analysis.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -40,6 +41,13 @@ This project is a web application built using React and Redux, comussiong the Sp
 ### Key Features <a name="key-features"></a>
 
 - **Page Development** : UI desing of the application.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- <a href="https://nebulacoinnect.netlify.app/"> Visit the site!</a>
+- <a href="https://www.loom.com/share/405ed95c13a04241bddc576d8bac71f6">Here is the Loom video!</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -114,7 +122,7 @@ GitHub pages.
 
 - GitHub: [@federicaulzurrun](https://github.com/federicaulzurrun)
 - Twitter: [@ulzurrunfede](https://mobile.twitter.com/ulzurrunfede)
-- LinkedIn: [Federica Ulzurrun](https://www.linkedin.com/in/federica-ulzurrun-293a86198)
+- LinkedIn: [Federica Ulzurrun](https://www.linkedin.com/in/federicaulzurrun/)
 
 
 ## 🔭 Future Features <a name="future-features"></a>
@@ -141,7 +149,7 @@ If you like this project let me know via twitter ! and i'll follow you!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Thanks to Microverse for allowing me to make this project.
+Thanks to Microverse for allowing me to make this project. And I would like to thank for the design idea of Nelson Sawka on Behance(https://www.behance.net/sakwadesignstudio) 🚀
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
