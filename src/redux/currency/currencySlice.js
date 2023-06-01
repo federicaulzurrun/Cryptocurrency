@@ -12,7 +12,7 @@ export const getCurrencies = createAsyncThunk('currency/getData', async () => {
   }
 });
 
-const initialState = {
+export const initialState = {
   currency: {
     crypto: {},
   },
