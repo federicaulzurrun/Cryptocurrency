@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #df4580;
+}
+
+.imgCont {
+  display: flex;
+  align-items: center;
+  width: 18%;
+  height: 30%;
+  padding-bottom: 1%;
+}
+
+.logo {
+  align-self: center;
+  width: 70%;
+  height: 90%;
+  padding-top: 8%;
+}
+
+.nav-side {
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  color: #fff;
+}
+
+.arrow {
+  padding-left: 2%;
+}
+
+.settings {
+  padding-left: 70%;
+  padding-right: 10%;
+}
