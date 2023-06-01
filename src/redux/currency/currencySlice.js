@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
-const url = 'http://api.coinlayer.com/list?access_key=37934908e28fb487b137f25b6a90dfcc';
+const url = 'https://api.coinlayer.com/list?access_key=37934908e28fb487b137f25b6a90dfcc';
 
 export const getCurrencies = createAsyncThunk('currency/getData', async () => {
   try {
