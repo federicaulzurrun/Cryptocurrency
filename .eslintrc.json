@@ -4,6 +4,9 @@
     "es6": true,
     "jest": true
   },
+  "globals": {
+    "useNavigate": "readonly"
+  },
   "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaFeatures": {
