@@ -20,12 +20,6 @@ const initialState = {
   error: null,
 };
 
-export const getCurrency = createAsyncThunk('currency/getCurrency', async () => {
-  const response = await fetch('https://api.coinlayer.com/list?access_key=37934908e28fb487b137f25b6a90dfcc');
-  const data = await response.json();
-  return data;
-});
-
 const currencySlice = createSlice({
   name: 'currency',
   initialState,
